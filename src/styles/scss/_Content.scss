@@ -1,0 +1,7 @@
+.content {
+  display: grid;
+  grid-template-areas:
+    'content announcement'
+    'content trending';
+  grid-template-columns: 1fr auto;
+}

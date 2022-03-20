@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: normal 1.6rem 'Roboto', sans-serif;
+  background: var(--background-color);
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'navbar header'
+    'navbar content';
+  min-height: 100vh;
+  color: var(--main-white);
+}

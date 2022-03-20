@@ -1,0 +1,133 @@
+.header {
+  grid-area: header;
+  background: var(--main-white);
+  padding: 2rem 4rem;
+  color: var(--main-text);
+
+  .top {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin-bottom: 2rem;
+
+    .search {
+      width: auto;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      width: 100%;
+
+      .search-input {
+        border: 0;
+        border-radius: 2rem;
+        background-color: var(--background-color);
+        font-size: 1.6rem;
+        font-family: inherit;
+        padding: 1rem 2rem;
+        transition: all 200ms ease-out;
+        width: 20rem;
+
+        &:focus {
+          width: 80%;
+          outline: 0;
+          box-shadow: 0 0 0 3px var(--main-accent) inset;
+        }
+      }
+    }
+
+    .top-profile {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      & > * {
+        cursor: pointer;
+      }
+
+      .bell {
+        transition: 200ms ease-out;
+
+        &:hover {
+          color: var(--main-accent);
+        }
+      }
+
+      .top-img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background: var(--marin-picture) center center / cover no-repeat;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+
+      .top-name {
+        font-size: 1.75rem;
+        font-weight: 800;
+        text-decoration: underline transparent;
+        text-underline-position: under;
+        transition: 200ms ease-out;
+
+        &:hover {
+          color: var(--main-accent);
+          text-decoration-color: lightgray;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      .bottom-img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        background: var(--marin-picture) center center / cover no-repeat;
+      }
+
+      .profile-name {
+        .greeting {
+          font-weight: bold;
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .name {
+          font-weight: 800;
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .button-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      .button {
+        cursor: pointer;
+        border: 0;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        background-color: var(--main-accent);
+        color: var(--main-white);
+        font-family: inherit;
+        font-size: 1.6rem;
+        transition: 200ms ease-out;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+    }
+  }
+}
