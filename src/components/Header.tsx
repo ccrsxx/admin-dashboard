@@ -17,7 +17,7 @@ export function Header() {
         <div className='top-profile'>
           <Icon className='bell' path={mdiBellRingOutline} size={1.75} />
           <div className='top-img' />
-          <p className='top-name'>Marin Katagawa</p>
+          <p className='top-name'>Marin Kitagawa</p>
         </div>
       </div>
       <div className='bottom'>
@@ -25,9 +25,9 @@ export function Header() {
           <div className='bottom-img' />
           <div className='profile-name'>
             <p className='greeting'>Hi there,</p>
-            <p className='name'>
-              Marin Katagawa (<span className='username'>@marinkatagawa</span>)
-            </p>
+            <h2 className='name'>
+              Marin Kitagawa (<span className='username'>@marin</span>)
+            </h2>
           </div>
         </div>
         <div className='button-wrapper'>

@@ -18,6 +18,6 @@ body {
   grid-template-areas:
     'navbar header'
     'navbar content';
-  min-height: 100vh;
+  height: 100vh;
   color: var(--main-white);
 }

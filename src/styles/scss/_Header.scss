@@ -3,6 +3,7 @@
   background: var(--main-white);
   padding: 2rem 4rem;
   color: var(--main-text);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 
   .top {
     display: grid;
@@ -56,6 +57,7 @@
         height: 5rem;
         border-radius: 50%;
         background: var(--marin-picture) center center / cover no-repeat;
+        transition: 200ms ease-out;
 
         &:hover {
           filter: brightness(0.9);
@@ -88,10 +90,16 @@
       gap: 3rem;
 
       .bottom-img {
+        cursor: pointer;
         width: 8rem;
         height: 8rem;
         border-radius: 50%;
-        background: var(--marin-picture) center center / cover no-repeat;
+        background: var(--marin-picture-two) center center / cover no-repeat;
+        transition: 200ms ease-out;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
       }
 
       .profile-name {
