@@ -6,9 +6,17 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 
   .top {
-    display: grid;
-    grid-template-columns: 1fr max-content;
+    display: flex;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column-reverse;
+      gap: 2rem;
+
+      > * {
+        justify-content: center;
+      }
+    }
 
     .search {
       width: auto;
@@ -70,6 +78,7 @@
         text-decoration: underline transparent;
         text-underline-position: under;
         transition: 200ms ease-out;
+        width: max-content;
 
         &:hover {
           color: var(--main-accent);
@@ -84,6 +93,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 800px) {
+      justify-content: center;
+    }
+
     .profile {
       display: flex;
       align-items: center;
@@ -97,12 +110,20 @@
         background: var(--marin-picture-two) center center / cover no-repeat;
         transition: 200ms ease-out;
 
+        @media screen and (max-width: 1150px) {
+          display: none;
+        }
+
         &:hover {
           filter: brightness(0.9);
         }
       }
 
       .profile-name {
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+
         .greeting {
           font-weight: bold;
           font-size: 1.5rem;

@@ -3,12 +3,22 @@
   background-color: var(--main-accent);
   padding: 3rem;
 
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+
   .nav-title {
     display: flex;
     align-items: center;
     gap: 1rem;
     font-size: 3rem;
     font-weight: bold;
+  }
+
+  .nav-item {
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
   }
 
   .nav-contents {

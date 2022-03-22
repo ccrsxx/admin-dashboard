@@ -20,4 +20,16 @@ body {
     'navbar content';
   height: 100vh;
   color: var(--main-white);
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: auto 1fr;
+    height: unset;
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'content';
+  }
 }
