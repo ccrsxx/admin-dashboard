@@ -99,10 +99,10 @@ export function Content() {
                 <Icon path={mdiBookmarkPlusOutline} size={1.75} />
               </button>
               <button type='button'>
-                <Icon path={mdiBookmarkPlusOutline} size={1.75} />
+                <Icon path={mdiEyePlusOutline} size={1.75} />
               </button>
               <button type='button'>
-                <Icon path={mdiBookmarkPlusOutline} size={1.75} />
+                <Icon path={mdiShareVariantOutline} size={1.75} />
               </button>
             </div>
           </div>
@@ -118,10 +118,10 @@ export function Content() {
                 <Icon path={mdiBookmarkPlusOutline} size={1.75} />
               </button>
               <button type='button'>
-                <Icon path={mdiBookmarkPlusOutline} size={1.75} />
+                <Icon path={mdiEyePlusOutline} size={1.75} />
               </button>
               <button type='button'>
-                <Icon path={mdiBookmarkPlusOutline} size={1.75} />
+                <Icon path={mdiShareVariantOutline} size={1.75} />
               </button>
             </div>
           </div>
